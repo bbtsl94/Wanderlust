@@ -1,0 +1,6 @@
+div {
+	border-width: 2px 2px 2px 2px;
+	border-style: solid;
+	border-color: black black black black;
+	background-color: #F0FFFF;
+}

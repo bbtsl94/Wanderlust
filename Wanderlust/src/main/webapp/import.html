@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>import </title>
+        <script>
+            var reader = new FileReader();
+            reader.onload = function(event)
+            {
+                var testo = event.target.result;
+                document.getElementById("contenuto").innerHTML = testo;
+            };
+            reader.readAsText("base.html");
+         </script>
+    </head> 
+    <body onload></body>
+     <!--  <embed src="base.html"  width="100%">-->
+        <div id="contenuto"> </div>
+     </body>
+</html>

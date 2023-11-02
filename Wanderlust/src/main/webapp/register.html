@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REGISTER</title>	
+		<link rel="stylesheet" href="/stile/home.css">
+	</head>
+	<body>		
+		<form style="margin-top: 50px;" name="inserimento" action="newaccount" method = "post">
+			<h2>Registrazione</h2>       
+       			<label for="nome">Nominativo</label>
+        			<input type="text" placeholder="Nome" name="nominativo" onKeyup="register()">
+        	
+        		
+        		<label for="dataNascita">Data di nascita</label>
+        			<input type="date" name="dob" style="padding-top: 15px !important;">
+        	
+       			 <label for="codiceFiscale">Codice Fiscale</label>
+        			<input type="text" placeholder="Codice fiscale" name="cf" onKeyup="register()">
+        
+        		<label for="username">Username</label>
+       			    <input type="text" placeholder="Username" name="username" onKeyup="register()">
+        	
+         		<label for="email">Email</label>
+        			<input type="text" placeholder="Email" name="email" onKeyup="register()">
+
+        		<label for="password">Password</label>
+        			<input type="password" placeholder="Password" name="password" onKeyup="register()">
+              
+         			<button type="submit" style="   display: block;
+			    									height: 50px;
+			    									width: 100%;
+			   	 									background-color: rgba(255,255,255,0.07);
+			   										border-radius: 3px;
+			   										padding: 0 10px;
+			   										margin-top: 8px;
+			   										font-size: 14px;
+			    									font-weight: 300;" >Registrazione</button>
+         			<br> 
+		<a href="/sessione/login" style="text-decoration: none"> <input type="button" value="login"> </a>				
+    	</form>
+		<br>
+	</body>
+		<script src="/script/register.js"></script>
+</html>

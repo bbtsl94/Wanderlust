@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/*Disabilitare link*/
+.prenota
+{
+	pointer-events: none;
+	cursor: default;
+}

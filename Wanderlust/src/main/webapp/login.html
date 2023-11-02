@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME</title>
+		<link rel="stylesheet" href="/stile/home.css">
+	</head>
+	<body>	
+    	<form name="inserimento" action="accesso" method = "get">
+       	 <h2>Login</h2>
+        	<label for="username">Username</label>
+        		<input type="text" placeholder="Username / Email" name="username" onKeyup="login()">
+        	
+        	<label for="password">Password</label>
+        		<input type="password" placeholder="Password" name="password" onKeyup="login()">
+         			
+         			<button type="submit" style="   display: block;
+    									 			height: 50px;
+    									 			width: 100%;
+			   	 									background-color: rgba(255,255,255,0.07);
+			   										border-radius: 3px;
+			   										padding: 0 10px;
+			   										margin-top: 8px;
+			   										font-size: 14px;
+			    									font-weight: 300;" >Login</button>
+			        <br>
+        			<button><a href="/sessione/register" style="text-decoration: none">Registrazione</a></button>
+    	</form>		 
+			<script src="/script/home.js"></script>		
+	</body>
+</html>
