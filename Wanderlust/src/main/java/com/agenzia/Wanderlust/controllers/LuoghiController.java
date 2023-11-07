@@ -125,11 +125,5 @@ public class LuoghiController {
 	}
 	
 	
-	@GetMapping("funziono")
-	@ResponseBody
-	public String prova ()
-	{
-		return "funziono";
-	}
 
 }

@@ -60,7 +60,6 @@ public class SessioneController
 	@PostMapping("newaccount")
 	public String formNewaccount( @RequestParam Map<String , String >map) 
 	{
-		System.err.println("coglione");
 		if ( daopersona.controllo(map)) 
 		{
 			// caso in cui il controllo va a buon fine (molto difficile abbiamo cannato)
@@ -76,10 +75,7 @@ public class SessioneController
 	public String verificaLogin(@RequestParam Map<String , String > map ,HttpSession session ) 
 	{
 		Persona p = null;
-		System.out.println(map.get("dob") +  "valore di dio stilenca  ");
-		System.out.println();
 		p = daopersona.cercaPersona(map.get("username") , map.get("password"));
-		System.out.println(p);
 		if(p != null) 
 		{
 			session.setAttribute("codice", null);
@@ -138,7 +134,6 @@ public class SessioneController
 				model.addAttribute("persona" , (Persona) session.getAttribute("persona"));
 				Compagnia compagnia = daoCompagnia.cercaCompagnia((int) session.getAttribute("idcompagnia"));
 				model.addAttribute("compagnia" , compagnia );
-				System.out.println("sono operatore");
 				return "/basemenu/menuoperatore.jsp";
 			case "admin":
 				

@@ -8,22 +8,9 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import com.agenzia.Wanderlust.Dao.DaoBiglietto;
-import com.agenzia.Wanderlust.Dao.DaoLuogo;
-import com.agenzia.Wanderlust.Dao.DaoMezzo;
-import com.agenzia.Wanderlust.Dao.DaoMotivazione;
-import com.agenzia.Wanderlust.Dao.DaoTrasporto;
-import com.agenzia.Wanderlust.Dao.DaoViaggio;
-import com.agenzia.Wanderlust.entities.Luogo;
-import com.agenzia.Wanderlust.entities.Mezzo;
-import com.agenzia.Wanderlust.entities.Motivazione;
-import com.agenzia.Wanderlust.entities.Persona;
-import com.agenzia.Wanderlust.entities.Trasporto;
-import com.agenzia.Wanderlust.entities.Viaggio;
+import org.springframework.web.bind.annotation.*;
+import com.agenzia.Wanderlust.Dao.*;
+import com.agenzia.Wanderlust.entities.*;
 
 @Controller
 @RequestMapping("/viaggi")
